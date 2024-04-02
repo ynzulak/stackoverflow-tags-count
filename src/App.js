@@ -31,7 +31,8 @@ const App = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div>
+  <div className='main-app'>
+    <div className='container'>
       <h1>StackOverflow Tags Browser</h1>
       <label htmlFor="perPage">Number of elements:</label>
       <input
@@ -44,6 +45,7 @@ const App = () => {
         onChange={handleChangePerPage}
       />
       <TagList tags={tags.slice(0, perPage)} /> 
+    </div>
     </div>
   );
 };

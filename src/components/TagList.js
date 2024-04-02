@@ -27,6 +27,7 @@ const TagList = ({ tags }) => {
             <TableRow
               key={tag.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              className='table-row'
             >
               <TableCell component="th" scope="row">{tag.name}</TableCell>
               <TableCell align="right">{tag.count}</TableCell>
