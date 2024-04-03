@@ -27,8 +27,8 @@ const App = () => {
     setPerPage(parseInt(e.target.value));
   };
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (loading) return <div className='loading'><div>Loading...</div></div>;
+  if (error) return <div className='loading'><div>Error: {error}</div></div>;
 
   return (
   <div className='main-app'>
